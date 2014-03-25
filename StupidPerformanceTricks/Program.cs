@@ -26,7 +26,7 @@ namespace StupidPerformanceTricks
 				// BlockCopyVsRaw.Test();
 				// ObjectPoolVsNew.Test();
 				// FftTest.Test();
-				BufferPoolVsNew.Test();
+				// BufferPoolVsNew.Test();
 				// DictionaryLookupTest.Test();
 				// ArraySegmentTest.Test();
 				// CacheVsAssemblyCreateInstance.Test();
@@ -46,6 +46,7 @@ namespace StupidPerformanceTricks
 				// StackVsQueue.Test();
 				// SquareRoots.Test();
 				// JaggedArrayVs2DArray.Test();
+                ShallowCloneTest.Test();
 				Console.WriteLine();
 			}
 			Console.ReadLine();

@@ -60,6 +60,7 @@
     <Compile Include="JaggedArrayVs2DArray.cs" />
     <Compile Include="LengthVsByteLength.cs" />
     <Compile Include="LockOverhead.cs" />
+    <Compile Include="ShallowCloneTest.cs" />
     <Compile Include="ObjectPoolVsNew.cs" />
     <Compile Include="BlockCopyVsRaw.cs" />
     <Compile Include="ForLoopTest.cs" />
