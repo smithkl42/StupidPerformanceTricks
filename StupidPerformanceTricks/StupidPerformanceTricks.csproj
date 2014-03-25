@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98961B32-8C61-4E37-99C8-429EF8F92BDD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StupidPerformanceTricks</RootNamespace>
+    <AssemblyName>StupidPerformanceTricks</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Approximate.cs" />
+    <Compile Include="ArrayClearTest.cs" />
+    <Compile Include="ArrayReferenceTest.cs" />
+    <Compile Include="ArraySegmentTest.cs" />
+    <Compile Include="BufferPool.cs" />
+    <Compile Include="BufferPoolVsNew.cs" />
+    <Compile Include="CacheVsAssemblyCreateInstance.cs" />
+    <Compile Include="DivisionTest.cs" />
+    <Compile Include="FieldVsProperty.cs" />
+    <Compile Include="DictionaryLookupTest.cs" />
+    <Compile Include="FftTest.cs" />
+    <Compile Include="FourierTransform.cs" />
+    <Compile Include="GetColorDistanceComparisons.cs" />
+    <Compile Include="JaggedArrayHelper.cs" />
+    <Compile Include="JaggedArrayVs2DArray.cs" />
+    <Compile Include="LengthVsByteLength.cs" />
+    <Compile Include="LockOverhead.cs" />
+    <Compile Include="ObjectPoolVsNew.cs" />
+    <Compile Include="BlockCopyVsRaw.cs" />
+    <Compile Include="ForLoopTest.cs" />
+    <Compile Include="MembersVsLocalsTest.cs" />
+    <Compile Include="ArrayIndexTest.cs" />
+    <Compile Include="ArrayCopyTest.cs" />
+    <Compile Include="ArrayCloneTest.cs" />
+    <Compile Include="ByteStream.cs" />
+    <Compile Include="ByteStreamStruct.cs" />
+    <Compile Include="ArrayAccessorsTest.cs" />
+    <Compile Include="ObjectPool.cs" />
+    <Compile Include="RoundingTest.cs" />
+    <Compile Include="Scratch.cs" />
+    <Compile Include="SizeOfTest.cs" />
+    <Compile Include="CrcTest.cs" />
+    <Compile Include="Crc32Int.cs" />
+    <Compile Include="Crc32.cs" />
+    <Compile Include="MemoryStreamReadTest.cs" />
+    <Compile Include="QueueTest.cs" />
+    <Compile Include="DoubleTest.cs" />
+    <Compile Include="FixedQueue.cs" />
+    <Compile Include="FloatingPointTest.cs" />
+    <Compile Include="PerformanceMonitor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetByteTest.cs" />
+    <Compile Include="SpeexFft.cs" />
+    <Compile Include="SquareRoots.cs" />
+    <Compile Include="StackVsQueue.cs" />
+    <Compile Include="StaticVsInstance.cs" />
+    <Compile Include="TestHelper.cs" />
+    <Compile Include="ThreadPoolVsThreads.cs" />
+    <Compile Include="TicksTest.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
